@@ -49,17 +49,17 @@ public class Dinorun extends JPanel implements ActionListener, KeyListener {
         setBackground(Color.lightGray);
         setFocusable(true);
         addKeyListener(this);
+    try {
+        dinosourImg = new ImageIcon(new URL("https://raw.githubusercontent.com/Karan7s7n/Dinorun-Chrome-Game-in-JAVA/main/dino-run.gif")).getImage();
+        dinosourDeadImg = new ImageIcon(new URL("https://raw.githubusercontent.com/Karan7s7n/Dinorun-Chrome-Game-in-JAVA/main/dino-dead.png")).getImage();
+        dinosourJumpImg = new ImageIcon(new URL("https://raw.githubusercontent.com/Karan7s7n/Dinorun-Chrome-Game-in-JAVA/main/dino-jump.png")).getImage();
+        cactus1Img = new ImageIcon(new URL("https://raw.githubusercontent.com/Karan7s7n/Dinorun-Chrome-Game-in-JAVA/main/cactus1.png")).getImage();
+        cactus2Img = new ImageIcon(new URL("https://raw.githubusercontent.com/Karan7s7n/Dinorun-Chrome-Game-in-JAVA/main/cactus2.png")).getImage();
+        cactus3Img = new ImageIcon(new URL("https://raw.githubusercontent.com/Karan7s7n/Dinorun-Chrome-Game-in-JAVA/main/cactus3.png")).getImage();
+        catch (MalformedURLException e) {
+        intStackTrace();
+    }
 
-        try {
-            dinosourImg = new ImageIcon(new URL("https://raw.githubusercontent.com/ImKennyYip/chrome-dinosaur-java/master/img/dino-run.gif")).getImage();
-            dinosourDeadImg = new ImageIcon(new URL("https://raw.githubusercontent.com/ImKennyYip/chrome-dinosaur-java/master/img/dino-dead.png")).getImage();
-            dinosourJumpImg = new ImageIcon(new URL("https://raw.githubusercontent.com/ImKennyYip/chrome-dinosaur-java/master/img/dino-jump.png")).getImage();
-            cactus1Img = new ImageIcon(new URL("https://raw.githubusercontent.com/ImKennyYip/chrome-dinosaur-java/master/img/cactus1.png")).getImage();
-            cactus2Img = new ImageIcon(new URL("https://raw.githubusercontent.com/ImKennyYip/chrome-dinosaur-java/master/img/cactus2.png")).getImage();
-            cactus3Img = new ImageIcon(new URL("https://raw.githubusercontent.com/ImKennyYip/chrome-dinosaur-java/master/img/cactus3.png")).getImage();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
 
         dinosour = new Block(dx, dy, dw, dh, dinosourImg);
         cacarr = new ArrayList<>();
