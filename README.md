@@ -91,6 +91,17 @@ Images used are pulled from GitHub URLs:
 * 💀 Dino Dead
 * 🌵 Cactus variants (1x, 2x, 3x)
 
+* 👨‍💻 Developer
+
+Karan Singh Negi
+Frontend Developer | React | TypeScript | Java | Flutter
+
+GitHub: https://github.com/Karan7s7n
+
+Portfolio: 
+
+LinkedIn: www.linkedin.com/in/karan-singh-negi-0098532b5
+
 
 
 
